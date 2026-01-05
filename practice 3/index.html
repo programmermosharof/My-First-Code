@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Tasks Website</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>HTML Practice Tasks</h1>
+  </header>
+
+  <!-- Task 1 -->
+  <section class="task-section">
+    <h2>Task 1: Image Search & Feedback</h2>
+
+    <div class="search-bar">
+      <label for="search">Search your Image here:</label>
+      <input type="text" id="search" placeholder="Kung Fu Panda">
+      <button>Search</button>
+    </div>
+
+    <div class="image-box">
+      <img src="panda.jpg" alt="Kung Fu Panda">
+    </div>
+
+    <a href="#" class="more-link">For more click here</a>
+
+    <hr>
+
+    <form class="simple-form">
+      <h3>Feedback Form</h3>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="5"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Task 2 -->
+  <section class="task-section">
+    <h2>Task 2: Storytelling Feedback</h2>
+
+    <form class="card">
+      <p class="intro">
+        You have been invited to design a feedback form for a storytelling contest.
+      </p>
+
+      <label for="story">Your Story:</label>
+      <textarea id="story" rows="5" cols="40"></textarea>
+
+      <label for="rating">Rate the story:</label>
+      <select id="rating">
+        <option value="">Select rating</option>
+        <option>Good</option>
+        <option>Very Good</option>
+        <option>Excellent</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Task 3 -->
+  <section class="task-section">
+    <h2>Task 3: Tournament Table</h2>
+
+    <table>
+      <caption>Table Tennis Tournament</caption>
+
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>Player A</th>
+          <th>Player B</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Match 1</td>
+          <td>John</td>
+          <td>Alice</td>
+        </tr>
+        <tr>
+          <td>Match 2</td>
+          <td>Mark</td>
+          <td>Sarah</td>
+        </tr>
+        <tr>
+          <th colspan="3">Final</th>
+        </tr>
+        <tr>
+          <td>Champion</td>
+          <td>TBD</td>
+          <td>TBD</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Practice Website by Mosharof</p>
+  </footer>
+
 </body>
 </html>
